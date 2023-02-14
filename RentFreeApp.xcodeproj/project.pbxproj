@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B126FDB9299C535200852219 /* Student Verification .swift in Sources */ = {isa = PBXBuildFile; fileRef = B126FDB8299C535200852219 /* Student Verification .swift */; };
 		8BF7FFFF299C53F500A74035 /* RentFree1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7FFFE299C53F500A74035 /* RentFree1.swift */; };
 		D40E888A299C50F2003347BE /* RentFreeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40E8889299C50F2003347BE /* RentFreeAppApp.swift */; };
 		D40E888C299C50F2003347BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40E888B299C50F2003347BE /* ContentView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B126FDB8299C535200852219 /* Student Verification .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student Verification .swift"; sourceTree = "<group>"; };
 		8BF7FFFE299C53F500A74035 /* RentFree1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentFree1.swift; sourceTree = "<group>"; };
 		D40E8886299C50F2003347BE /* RentFreeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RentFreeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D40E8889299C50F2003347BE /* RentFreeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentFreeAppApp.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			children = (
 				D40E8889299C50F2003347BE /* RentFreeAppApp.swift */,
 				D40E888B299C50F2003347BE /* ContentView.swift */,
+				B126FDB8299C535200852219 /* Student Verification .swift */,
 				D40E8897299C555D003347BE /* Browsing.swift */,
 				D40E888D299C50F3003347BE /* Assets.xcassets */,
 				D40E888F299C50F3003347BE /* Preview Content */,
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B126FDB9299C535200852219 /* Student Verification .swift in Sources */,
 				D40E888C299C50F2003347BE /* ContentView.swift in Sources */,
 				8BF7FFFF299C53F500A74035 /* RentFree1.swift in Sources */,
 				D40E888A299C50F2003347BE /* RentFreeAppApp.swift in Sources */,
