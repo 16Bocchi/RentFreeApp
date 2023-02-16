@@ -19,7 +19,7 @@ struct ContentView: View {
         
         NavigationView{
             NavigationLink(destination: {
-                ListingsView()
+                ImagePicker()
             }, label: {
                 Text("Press Me")
             })
