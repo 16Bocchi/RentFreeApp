@@ -9,15 +9,9 @@ import SwiftUI
 
 struct Student_Verification_: View {
     var body: some View {
+        //17 Feb, 9:43 removed multiple VStacks
         VStack {
-            VStack {
-                VStack {
-                    VStack {
-                        VStack {
-                            VStack {
-                                VStack {
-                                    
-                                    
+
                                     Text("Verify your Student ID")
                                         .font(.largeTitle)
                                         .fontWeight(.bold)
@@ -37,24 +31,10 @@ struct Student_Verification_: View {
                                             }
                                             VStack {
                                                 Button("Verify") {
+                                                    }
                                                 }
-                                            
-                                            
-                                        }
-                                    }}
-                            }}
-                    }
-                    //
-                    //        .overlay(
-                    //               RoundedRectangle(cornerRadius: 15
-                    //                   .stroke(Color.blue,lineWidth: 1))
-                    
-                    //                .padding()
-                    //                .textFieldStyle(RoundedBorderTextFieldStyle(Color.blue))
-                }
-            }
+                                            }
         }
-        
     }
     
     
@@ -62,4 +42,4 @@ struct Student_Verification_: View {
         static var previews: some View {
             Student_Verification_()
         }
-    }}
+    }
