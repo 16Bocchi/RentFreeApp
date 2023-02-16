@@ -10,13 +10,14 @@ import CoreData
 
 struct ListingsView: View {
     @State var location: String = ""
-    @State var rating: Float = Float()
-    @State var price: Float = Float()
+    @State var rating: String = ""
+    @State var price: String = ""
+    @State private var showingAlert = false
     
     @Environment(\.managedObjectContext) private var viewContext
     
-    @FetchRequest(entity: Listings.entity(), sortDescriptors: [])
-    private var listings: FetchedResults<Listings>
+    @FetchRequest(entity: Listing.entity(), sortDescriptors: [])
+    private var listings: FetchedResults<Listing>
     
     
     
@@ -24,43 +25,140 @@ struct ListingsView: View {
         NavigationView{
             VStack{
                 TextField("Location", text: $location)
-                TextField("Rating", value: $rating, format: .number)
-                TextField("Price per night", value: $price, format: .number)
+                TextField("Rating", text: $rating)
+                TextField("Price per night", text: $price)
                 HStack {
                     Spacer()
                     Button("Add") {
-                        
+                        addProduct()
                     }
                     Spacer()
                     Button("Clear") {
                         location = ""
-                        //                    rating
-                        //                    price
+                        rating = ""
+                        price = ""
+                    }
+                    Spacer()
+                    NavigationLink(destination: ResultsView(name: location, viewContext: viewContext)) {
+                        Text("Find")
                     }
                     Spacer()
                 }
                 .padding()
                 .frame(maxWidth: .infinity)
                 
+                
+                
                 List{
-                    ForEach(listings){listings in
+//                  Text("Hiiii")
+                    ForEach(listings) { listing in
                         HStack{
-                            Text(listings.location ?? "not found")
+                            Text(listing.location ?? "Not found")
                             Spacer()
-                            Text(listings.rating ?? "not found")
-                            //                        Spacer()
-                            //                        Text(listings.price ?? "not found")
+                            Text(listing.rating ?? "Not found")
+                            Spacer()
+                            Text(listing.price ?? "Not found")
                         }
                     }
+                    .onDelete(perform: deleteProducts)
                 }
-                .navigationTitle("Listings")
+                .navigationTitle("help me please")
             }
+            .padding()
+            .textFieldStyle(RoundedBorderTextFieldStyle())
         }
     }
-}
     
+    private func addProduct(){
+        withAnimation{
+            let listing = Listing(context: viewContext)
+            listing.location = location
+            if(rating.isFloat()){
+                listing.rating = rating
+            } else{
+                .alert(isPresented: $showingAlert){
+                    Alert(
+                        title: Text("Invalid Entry"),
+                        message: Text("Please input a valid number")
+                    )
+                }
+            }
+
+            if let floatValue = Float(rating) {
+                print("Float value = \(floatValue)")
+                listing.price = price
+            } else {
+                print("String does not contain Float")
+            }
+            
+            
+            saveContext()
+        }
+    }
+    
+    private func saveContext(){
+        do {
+            try viewContext.save()
+        } catch{
+            let error = error as NSError
+            fatalError("An error occured: \(error)")
+        }
+    }
+    
+    private func deleteProducts(offsets: IndexSet){
+        withAnimation {
+            offsets.map {listings[$0] }.forEach(viewContext.delete)
+                saveContext()
+            }
+    }
+        
+}
+
+
 struct ListingsView_Previews: PreviewProvider {
     static var previews: some View {
         ListingsView()
+    }
+}
+
+struct ResultsView: View{
+    var name: String
+    var viewContext: NSManagedObjectContext
+    @State var matches: [Listing]?
+    
+    var body: some View{
+        return VStack{
+            List{
+                ForEach(matches ?? []){match in
+                    HStack{
+                        Text(match.location ?? "Not Found")
+                        Spacer()
+                        Text(match.rating ?? "Not Found")
+                        Spacer()
+                        Text(match.price ?? "Not found")
+                    }
+                }
+            }
+            .navigationTitle("Results")
+        }
+        .task{
+            let fetchRequest: NSFetchRequest<Listing> = Listing.fetchRequest()
+            
+            fetchRequest.entity = Listing.entity()
+            fetchRequest.predicate = NSPredicate(
+                format: "location CONTAINS %@", name
+            )
+            matches = try? viewContext.fetch(fetchRequest)
+        }
+    }
+}
+
+extension String{
+    func isFloat() -> Bool {
+
+        if let floatValue = Float(self) {
+            return true
+        }
+        return false
     }
 }

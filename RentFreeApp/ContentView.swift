@@ -16,11 +16,20 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        
+        NavigationView{
+            NavigationLink(destination: {
+                ListingsView()
+            }, label: {
+                Text("Press Me")
+            })
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
+//        ListingsView()
         ContentView()
     }
 }

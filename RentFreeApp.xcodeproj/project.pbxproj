@@ -13,9 +13,9 @@
 		D40E888E299C50F3003347BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D40E888D299C50F3003347BE /* Assets.xcassets */; };
 		D40E8891299C50F3003347BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D40E8890299C50F3003347BE /* Preview Assets.xcassets */; };
 		D40E8898299C555D003347BE /* Browsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40E8897299C555D003347BE /* Browsing.swift */; };
-		D40E88A3299C62A5003347BE /* PropertyStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D40E88A1299C62A5003347BE /* PropertyStore.xcdatamodeld */; };
 		D40E88A5299C6333003347BE /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40E88A4299C6333003347BE /* PersistenceController.swift */; };
 		D40E88A8299C716D003347BE /* ListingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40E88A7299C716D003347BE /* ListingsView.swift */; };
+		D4F65E17299DA38C00A01124 /* Listings.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D4F65E15299DA38C00A01124 /* Listings.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,9 +26,9 @@
 		D40E888D299C50F3003347BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D40E8890299C50F3003347BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D40E8897299C555D003347BE /* Browsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Browsing.swift; sourceTree = "<group>"; };
-		D40E88A2299C62A5003347BE /* PropertyStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PropertyStore.xcdatamodel; sourceTree = "<group>"; };
 		D40E88A4299C6333003347BE /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		D40E88A7299C716D003347BE /* ListingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingsView.swift; sourceTree = "<group>"; };
+		D4F65E16299DA38C00A01124 /* Listings.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Listings.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				D40E88A4299C6333003347BE /* PersistenceController.swift */,
-				D40E88A1299C62A5003347BE /* PropertyStore.xcdatamodeld */,
+				D4F65E15299DA38C00A01124 /* Listings.xcdatamodeld */,
 				D40E88A7299C716D003347BE /* ListingsView.swift */,
 			);
 			path = CoreData;
@@ -169,7 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B126FDB9299C535200852219 /* Student Verification .swift in Sources */,
-				D40E88A3299C62A5003347BE /* PropertyStore.xcdatamodeld in Sources */,
+				D4F65E17299DA38C00A01124 /* Listings.xcdatamodeld in Sources */,
 				D40E888C299C50F2003347BE /* ContentView.swift in Sources */,
 				D40E88A5299C6333003347BE /* PersistenceController.swift in Sources */,
 				D40E888A299C50F2003347BE /* RentFreeAppApp.swift in Sources */,
@@ -375,13 +375,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		D40E88A1299C62A5003347BE /* PropertyStore.xcdatamodeld */ = {
+		D4F65E15299DA38C00A01124 /* Listings.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				D40E88A2299C62A5003347BE /* PropertyStore.xcdatamodel */,
+				D4F65E16299DA38C00A01124 /* Listings.xcdatamodel */,
 			);
-			currentVersion = D40E88A2299C62A5003347BE /* PropertyStore.xcdatamodel */;
-			path = PropertyStore.xcdatamodeld;
+			currentVersion = D4F65E16299DA38C00A01124 /* Listings.xcdatamodel */;
+			path = Listings.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
