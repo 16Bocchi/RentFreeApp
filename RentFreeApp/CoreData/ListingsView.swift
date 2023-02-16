@@ -76,12 +76,12 @@ struct ListingsView: View {
             if(rating.isFloat()){
                 listing.rating = rating
             } else{
-                .alert(isPresented: $showingAlert){
-                    Alert(
-                        title: Text("Invalid Entry"),
-                        message: Text("Please input a valid number")
-                    )
-                }
+//                .alert(isPresented: $showingAlert){
+//                    Alert(
+//                        title: Text("Invalid Entry"),
+//                        message: Text("Please input a valid number")
+//                    )
+//                }
             }
 
             if let floatValue = Float(rating) {
