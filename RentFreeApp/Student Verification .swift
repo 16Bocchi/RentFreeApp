@@ -32,12 +32,11 @@ struct Student_Verification_: View {
                                                 TextField("Country"/*@END_MENU_TOKEN@*/, text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant(""))
                                                 TextField("Name of University / College"/*@END_MENU_TOKEN@*/, text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant(""))
                                                 TextField("Student Email"/*@END_MENU_TOKEN@*/, text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant(""))
-                                                TextField("Expected Graduation Date"/*@END_MENU_TOKEN@*/, text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant(""))
+                                                TextField("Expected Graduation Date DD/MM/YYYY"/*@END_MENU_TOKEN@*/, text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant(""))
                                                 
                                             }
                                             VStack {
                                                 Button("Verify") {
-                                            
                                                 }
                                             
                                             
