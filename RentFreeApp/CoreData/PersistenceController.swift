@@ -13,7 +13,7 @@ struct PersistenceController{
     let container: NSPersistentContainer
     
     init(){
-        container = NSPersistentContainer(name: "Listings")
+        container = NSPersistentContainer(name: "PropertyStore")
         
         container.loadPersistentStores{(storeDescription, error) in
             if let error = error as NSError?{

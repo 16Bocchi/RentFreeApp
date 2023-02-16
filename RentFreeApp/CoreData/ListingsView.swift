@@ -19,7 +19,34 @@ struct ListingsView: View {
     @FetchRequest(entity: Listing.entity(), sortDescriptors: [])
     private var listings: FetchedResults<Listing>
     
-    
+    private func addProduct(){
+        withAnimation{
+            let listing = Listing(context: viewContext)
+            if(rating.isFloat()){
+                listing.rating = rating
+            } else{
+                self.showingAlert.toggle()
+                return
+            }
+
+            if(price.isFloat()){
+                listing.price = price
+            } else{
+                self.showingAlert.toggle()
+                return
+            }
+            if(rating.isFloat() && price.isFloat()){
+                listing.location = location
+                saveContext()
+            }
+
+
+
+
+        }
+        
+    }
+
     
     var body: some View {
         NavigationView{
@@ -62,39 +89,20 @@ struct ListingsView: View {
                     }
                     .onDelete(perform: deleteProducts)
                 }
-                .navigationTitle("help me please")
+                .navigationTitle("Property database")
             }
             .padding()
             .textFieldStyle(RoundedBorderTextFieldStyle())
+            .alert(isPresented: $showingAlert){
+            Alert(
+                title: Text("Invalid Entry"),
+                message: Text("Please input a valid number")
+            )
+        }
         }
     }
-    
-    private func addProduct(){
-        withAnimation{
-            let listing = Listing(context: viewContext)
-            listing.location = location
-            if(rating.isFloat()){
-                listing.rating = rating
-            } else{
-//                .alert(isPresented: $showingAlert){
-//                    Alert(
-//                        title: Text("Invalid Entry"),
-//                        message: Text("Please input a valid number")
-//                    )
-//                }
-            }
 
-            if let floatValue = Float(rating) {
-                print("Float value = \(floatValue)")
-                listing.price = price
-            } else {
-                print("String does not contain Float")
-            }
-            
-            
-            saveContext()
-        }
-    }
+    
     
     private func saveContext(){
         do {
