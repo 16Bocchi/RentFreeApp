@@ -79,9 +79,9 @@
 				D40E888B299C50F2003347BE /* ContentView.swift */,
 				B126FDB8299C535200852219 /* Student Verification .swift */,
 				D40E8897299C555D003347BE /* Browsing.swift */,
+				3799C201299EE607000398B9 /* Search.swift */,
 				D40E888D299C50F3003347BE /* Assets.xcassets */,
 				D40E888F299C50F3003347BE /* Preview Content */,
-				3799C201299EE607000398B9 /* Search.swift */,
 			);
 			path = RentFreeApp;
 			sourceTree = "<group>";
