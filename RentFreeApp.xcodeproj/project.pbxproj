@@ -42,11 +42,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B126FDBA299C582500852219 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		D40E887D299C50F2003347BE = {
 			isa = PBXGroup;
 			children = (
 				D40E8888299C50F2003347BE /* RentFreeApp */,
 				D40E8887299C50F2003347BE /* Products */,
+				B126FDBA299C582500852219 /* Recovered References */,
 				D40E889A299C55F9003347BE /* Recovered References */,
 			);
 			sourceTree = "<group>";
