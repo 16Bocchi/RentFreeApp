@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3799C202299EE607000398B9 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3799C201299EE607000398B9 /* Search.swift */; };
+		3799C206299EF5E9000398B9 /* Rent Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3799C205299EF5E9000398B9 /* Rent Details.swift */; };
+		37C44BD229A2D9110034AB38 /* Listing Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C44BD129A2D9110034AB38 /* Listing Details.swift */; };
 		B126FDB9299C535200852219 /* Student Verification .swift in Sources */ = {isa = PBXBuildFile; fileRef = B126FDB8299C535200852219 /* Student Verification .swift */; };
 		D403E5A2299EEE35005EC271 /* Listings.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D403E5A0299EEE35005EC271 /* Listings.xcdatamodeld */; };
 		D40E888A299C50F2003347BE /* RentFreeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40E8889299C50F2003347BE /* RentFreeAppApp.swift */; };
@@ -22,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		3799C201299EE607000398B9 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		3799C205299EF5E9000398B9 /* Rent Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rent Details.swift"; sourceTree = "<group>"; };
+		37C44BD129A2D9110034AB38 /* Listing Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Listing Details.swift"; sourceTree = "<group>"; };
 		B126FDB8299C535200852219 /* Student Verification .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student Verification .swift"; sourceTree = "<group>"; };
 		D403E5A1299EEE35005EC271 /* Listings.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Listings.xcdatamodel; sourceTree = "<group>"; };
 		D40E8886299C50F2003347BE /* RentFreeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RentFreeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +84,8 @@
 				B126FDB8299C535200852219 /* Student Verification .swift */,
 				D40E8897299C555D003347BE /* Browsing.swift */,
 				3799C201299EE607000398B9 /* Search.swift */,
+				3799C205299EF5E9000398B9 /* Rent Details.swift */,
+				37C44BD129A2D9110034AB38 /* Listing Details.swift */,
 				D40E888D299C50F3003347BE /* Assets.xcassets */,
 				D40E888F299C50F3003347BE /* Preview Content */,
 			);
@@ -183,11 +189,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B126FDB9299C535200852219 /* Student Verification .swift in Sources */,
+				37C44BD229A2D9110034AB38 /* Listing Details.swift in Sources */,
 				D40E888C299C50F2003347BE /* ContentView.swift in Sources */,
 				D403E5A2299EEE35005EC271 /* Listings.xcdatamodeld in Sources */,
 				D40E88A5299C6333003347BE /* PersistenceController.swift in Sources */,
 				D41558F4299EE97500ED9D52 /* ImagePicker.swift in Sources */,
 				D40E888A299C50F2003347BE /* RentFreeAppApp.swift in Sources */,
+				3799C206299EF5E9000398B9 /* Rent Details.swift in Sources */,
 				3799C202299EE607000398B9 /* Search.swift in Sources */,
 				D40E8898299C555D003347BE /* Browsing.swift in Sources */,
 				D40E88A8299C716D003347BE /* ListingsView.swift in Sources */,

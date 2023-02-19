@@ -24,20 +24,11 @@ struct Search: View {
     @State private var region =
         MKCoordinateRegion(center:CLLocationCoordinate2D(latitude:-33.80038111388358, longitude: 151.0711902132999), span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.1))
     
-    /*
-    Map
-     
-    @State private var region =
-    
-    
-    MKCoordinateRegion(center:CLLocationCoordinate2D(latitude:-33.80038111388358, longitude: 151.0711902132999), span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.1))
-    */
-    
     var body: some View {
         VStack {
             
             Text("I'm staying at...")
-                .font(.title)
+                .font(.system(size: 20))
             Form {
                 
                 TextField(text: $location, prompt: Text("Sydney, Eastern Suburbs")){
@@ -53,7 +44,7 @@ struct Search: View {
                 .overlay(
                     RoundedRectangle(cornerRadius: 15)
                         .stroke(Color.blue, lineWidth: 1)
-                    
+                  
                 )
                 
                 Map(coordinateRegion: $region)
@@ -86,20 +77,13 @@ struct Search: View {
             }
             
             .scrollContentBackground(.hidden)
-            
-            
-            
-    
+
             
             Button("Next"){
                 print("Button tapped!")
             }
             
-           // .padding(.bottom, 20.0)
-            
         }
-        //.padding(.all)
- 
     }
 }
 
