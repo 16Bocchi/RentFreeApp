@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3796F1DF29A3D78B00FCAE73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3796F1DE29A3D78B00FCAE73 /* Assets.xcassets */; };
+		3796F1E329A3D86900FCAE73 /* Start.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3796F1E029A3D86900FCAE73 /* Start.swift */; };
+		3796F1E429A3D86900FCAE73 /* Landing_Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3796F1E129A3D86900FCAE73 /* Landing_Page.swift */; };
+		3796F1E729A3D95500FCAE73 /* Create_Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3796F1E629A3D95500FCAE73 /* Create_Account.swift */; };
+		3796F1E929A3D99800FCAE73 /* Login_Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3796F1E829A3D99800FCAE73 /* Login_Account.swift */; };
 		3799C202299EE607000398B9 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3799C201299EE607000398B9 /* Search.swift */; };
 		3799C206299EF5E9000398B9 /* Rent Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3799C205299EF5E9000398B9 /* Rent Details.swift */; };
 		37C44BD229A2D9110034AB38 /* Listing Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C44BD129A2D9110034AB38 /* Listing Details.swift */; };
 		B126FDB9299C535200852219 /* Student Verification .swift in Sources */ = {isa = PBXBuildFile; fileRef = B126FDB8299C535200852219 /* Student Verification .swift */; };
 		D403E5A2299EEE35005EC271 /* Listings.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D403E5A0299EEE35005EC271 /* Listings.xcdatamodeld */; };
 		D40E888A299C50F2003347BE /* RentFreeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40E8889299C50F2003347BE /* RentFreeAppApp.swift */; };
-		D40E888C299C50F2003347BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40E888B299C50F2003347BE /* ContentView.swift */; };
-		D40E888E299C50F3003347BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D40E888D299C50F3003347BE /* Assets.xcassets */; };
 		D40E8891299C50F3003347BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D40E8890299C50F3003347BE /* Preview Assets.xcassets */; };
 		D40E8898299C555D003347BE /* Browsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40E8897299C555D003347BE /* Browsing.swift */; };
 		D40E88A5299C6333003347BE /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40E88A4299C6333003347BE /* PersistenceController.swift */; };
@@ -23,6 +26,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3796F1DE29A3D78B00FCAE73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3796F1E029A3D86900FCAE73 /* Start.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Start.swift; sourceTree = "<group>"; };
+		3796F1E129A3D86900FCAE73 /* Landing_Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Landing_Page.swift; sourceTree = "<group>"; };
+		3796F1E629A3D95500FCAE73 /* Create_Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Create_Account.swift; sourceTree = "<group>"; };
+		3796F1E829A3D99800FCAE73 /* Login_Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login_Account.swift; sourceTree = "<group>"; };
 		3799C201299EE607000398B9 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		3799C205299EF5E9000398B9 /* Rent Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rent Details.swift"; sourceTree = "<group>"; };
 		37C44BD129A2D9110034AB38 /* Listing Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Listing Details.swift"; sourceTree = "<group>"; };
@@ -30,8 +38,6 @@
 		D403E5A1299EEE35005EC271 /* Listings.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Listings.xcdatamodel; sourceTree = "<group>"; };
 		D40E8886299C50F2003347BE /* RentFreeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RentFreeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D40E8889299C50F2003347BE /* RentFreeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentFreeAppApp.swift; sourceTree = "<group>"; };
-		D40E888B299C50F2003347BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		D40E888D299C50F3003347BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D40E8890299C50F3003347BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D40E8897299C555D003347BE /* Browsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Browsing.swift; sourceTree = "<group>"; };
 		D40E88A4299C6333003347BE /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
@@ -79,14 +85,17 @@
 			isa = PBXGroup;
 			children = (
 				D40E88A6299C6348003347BE /* CoreData */,
+				3796F1E029A3D86900FCAE73 /* Start.swift */,
+				3796F1E129A3D86900FCAE73 /* Landing_Page.swift */,
+				3796F1E629A3D95500FCAE73 /* Create_Account.swift */,
+				3796F1E829A3D99800FCAE73 /* Login_Account.swift */,
 				D40E8889299C50F2003347BE /* RentFreeAppApp.swift */,
-				D40E888B299C50F2003347BE /* ContentView.swift */,
 				B126FDB8299C535200852219 /* Student Verification .swift */,
 				D40E8897299C555D003347BE /* Browsing.swift */,
 				3799C201299EE607000398B9 /* Search.swift */,
 				3799C205299EF5E9000398B9 /* Rent Details.swift */,
 				37C44BD129A2D9110034AB38 /* Listing Details.swift */,
-				D40E888D299C50F3003347BE /* Assets.xcassets */,
+				3796F1DE29A3D78B00FCAE73 /* Assets.xcassets */,
 				D40E888F299C50F3003347BE /* Preview Content */,
 			);
 			path = RentFreeApp;
@@ -176,8 +185,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3796F1DF29A3D78B00FCAE73 /* Assets.xcassets in Resources */,
 				D40E8891299C50F3003347BE /* Preview Assets.xcassets in Resources */,
-				D40E888E299C50F3003347BE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,16 +198,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				B126FDB9299C535200852219 /* Student Verification .swift in Sources */,
+				3796F1E729A3D95500FCAE73 /* Create_Account.swift in Sources */,
 				37C44BD229A2D9110034AB38 /* Listing Details.swift in Sources */,
-				D40E888C299C50F2003347BE /* ContentView.swift in Sources */,
 				D403E5A2299EEE35005EC271 /* Listings.xcdatamodeld in Sources */,
 				D40E88A5299C6333003347BE /* PersistenceController.swift in Sources */,
+				3796F1E929A3D99800FCAE73 /* Login_Account.swift in Sources */,
 				D41558F4299EE97500ED9D52 /* ImagePicker.swift in Sources */,
 				D40E888A299C50F2003347BE /* RentFreeAppApp.swift in Sources */,
 				3799C206299EF5E9000398B9 /* Rent Details.swift in Sources */,
 				3799C202299EE607000398B9 /* Search.swift in Sources */,
+				3796F1E429A3D86900FCAE73 /* Landing_Page.swift in Sources */,
 				D40E8898299C555D003347BE /* Browsing.swift in Sources */,
 				D40E88A8299C716D003347BE /* ListingsView.swift in Sources */,
+				3796F1E329A3D86900FCAE73 /* Start.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
