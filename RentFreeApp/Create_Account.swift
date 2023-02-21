@@ -79,7 +79,7 @@ struct Create_Account: View {
                     /*---------------------------------------*/
             
             NavigationLink(
-                destination: Signup_Authenticate(),
+                destination: SignUp_Authenticate(),
                     label: {
                         Text("Sign up")
                             .font(.system(size:25))

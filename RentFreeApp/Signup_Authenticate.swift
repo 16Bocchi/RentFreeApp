@@ -1,5 +1,5 @@
 //
-//  Create_Account.swift
+//  SignUp_Authenticate.swift
 //  RentFreeApp
 //
 //  Created by Moonoo Cha on 21/2/2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Signup_Authenticate: View {
+struct SignUp_Authenticate: View {
     
     @State var email: String=""
     @State var password: String=""
@@ -39,72 +39,46 @@ struct Signup_Authenticate: View {
                 /*---------------------------------------*/
                 
                 VStack{
-                    Text("AAAAAAAA!")
+                    Text("Enable two-factor authentication?")
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(Color(hue: 1.0, saturation: 0.0, brightness: 0.123))
                         .multilineTextAlignment(.center)
                         .padding(.vertical, 50.0)
-                    
-                    /*---------------------------------------*/
-                    
-                    TextField(text: $email, prompt:
-                                
-                                (Text("janedoe@gmail.com"))
-                              
-                    ){
-                        
-                    }
-                    .padding(.leading, 70.0)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 15)
-                            .stroke(Color.blue, lineWidth: 1)
-                            .frame(width:300, height:40)
-                    )
-                    
-                    /*---------------------------------------*/
-                    
-                    SecureField(text: $password, prompt:
-                                    
-                                    (Text("Password"))
-                                
-                    ){
-                        
-                    }
-                    .offset(y:34)
-                    .padding([.leading, .bottom], 70.0)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 15)
-                            .stroke(Color.blue, lineWidth: 1)
-                            .frame(width:300, height:40)
-                    )
-                    
-                    /*---------------------------------------*/
-                    
-                    HStack{
-                        Button(action:  toggle){
-                            Image(systemName: isChecked ? "checkmark.square" : "square")
-                        }
-                        
-                        Text("Keep me logged in")
-                    }
-                    
-                    /*---------------------------------------*/
+                                        
+                /*---------------------------------------*/
                     
             NavigationLink(
-                destination: Create_Account(), //change later
+                destination: TwoFac_Selected(),
                     label: {
-                        Text("Login")
+                        Text("Yes")
                             .font(.system(size:25))
                             .foregroundColor(Color.white)
                             .multilineTextAlignment(.center)
                             .imageScale(.large)
-                            .frame(width:230, height:70)
+                            .frame(width:150, height:70)
                             .background(
                                 Capsule()
                                     .fill(Color("AccentColor"))
-                                        .frame (width:230,height:70))
+                                        .frame (width:150,height:70))
                     })
+                    
+                /*---------------------------------------*/
+                    
+                    NavigationLink(
+                        destination: TwoFac_Selected(),
+                            label: {
+                                Text("Maybe later")
+                                    .font(.system(size:25))
+                                    .foregroundColor(Color.white)
+                                    .multilineTextAlignment(.center)
+                                    .imageScale(.large)
+                                    .frame(width:200, height:70)
+                                    .background(
+                                        Capsule()
+                                            .fill(Color(hue: 1.0, saturation: 0.0, brightness: 0.811))
+                                                .frame (width:200,height:70))
+                            })
             .padding(25.0)
                 }
             }
@@ -112,8 +86,8 @@ struct Signup_Authenticate: View {
     }
 }
 
-struct Signup_Authenticate_Previews: PreviewProvider {
+struct SignUp_Authenticate_Previews: PreviewProvider {
     static var previews: some View {
-        Login_Account()
+        SignUp_Authenticate()
     }
 }
