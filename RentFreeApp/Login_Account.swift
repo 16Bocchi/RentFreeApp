@@ -15,6 +15,8 @@ struct Login_Account: View {
     @State private var showAlert = false
     @State var incorrectText: String=""
     @State var navDisabled = false
+    @State var correctEmail = false
+    @State var filledPassword = false
     
     @State var isChecked:Bool = false
     func toggle(){isChecked = !isChecked}
@@ -28,7 +30,9 @@ struct Login_Account: View {
                 incorrectText = ""
             }
             incorrectText = "This email is invalid."
-            emailText = ""
+            correctEmail = false
+        }else{
+            correctEmail = true
         }
     }
     
@@ -89,12 +93,18 @@ struct Login_Account: View {
                 
                 /*---------------------------------------*/
                 
+               
+                
                 TextField(text: $emailText, prompt:
                             
                             (Text("janedoe@gmail.com"))
                           
                 ){
                     
+                }
+                .onChange(of: emailText) { newValue in
+                    checkValid(Any.self)
+                    print(correctEmail)
                 }
                 .padding(.leading, 70.0)
                 .overlay(
@@ -137,7 +147,6 @@ struct Login_Account: View {
                 }
                 
                 /*---------------------------------------*/
-                
                 
                 NavigationLink(
                     destination: TwoFac_Selected().onAppear{
