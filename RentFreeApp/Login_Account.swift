@@ -13,7 +13,7 @@ struct Login_Account: View {
     @State var emailText: String=""
     @State var password: String=""
     @State private var showAlert = false
-    @State var incorrectText: String=""
+    @State var incorrectEmail: String=""
     @State var navDisabled = false
     @State var correctEmail = false
     @State var filledPassword = false
@@ -27,9 +27,9 @@ struct Login_Account: View {
         let email = isValidEmail(testStr: emailText)
         if email == false{
             DispatchQueue.main.asyncAfter(deadline: .now() + 3){
-                incorrectText = ""
+                incorrectEmail = ""
             }
-            incorrectText = "This email is invalid."
+            incorrectEmail = "This email is invalid."
             correctEmail = false
         }else{
             correctEmail = true
@@ -47,12 +47,12 @@ struct Login_Account: View {
     
     /*-------Check if text fields are filled in -----------*/
     
-    func checkFilled(){
+    func checkPassword(){
         
-        if emailText.isEmpty || password.isEmpty {
-            let navDisabled = true
+        if password == "" {
+            filledPassword = false
         }else{
-            let navDisabled = false
+            filledPassword = true
         }
     }
     
@@ -122,6 +122,12 @@ struct Login_Account: View {
                 ){
                     
                 }
+                
+                .onChange(of: filledPassword) { newValue in
+                    checkValid(Any.self)
+                    print(correctEmail)
+                }
+                
                 .offset(y:34)
                 .padding([.leading, .bottom], 70.0)
                 .overlay(
@@ -132,8 +138,14 @@ struct Login_Account: View {
                 
                 /*---------------------------------------*/
                 
-                Text(incorrectText)
+                Text(incorrectEmail)
                     .padding(.bottom)
+                    .foregroundColor(Color.red)
+                
+                /*---------------------------------------*/
+                
+                Text("incorrectText")
+                    .offset(y: -11)
                     .foregroundColor(Color.red)
                 
                 /*---------------------------------------*/
