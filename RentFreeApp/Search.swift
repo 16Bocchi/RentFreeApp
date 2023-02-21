@@ -8,12 +8,12 @@
 import SwiftUI
 import MapKit
 import UIKit
-
+/*
 class ViewController: UIViewController{
     
     @IBOutlet weak var birthDateTxt: UITextField!
 }
-
+*/
 struct Search: View {
     
     @State var location: String=""

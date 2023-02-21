@@ -13,7 +13,7 @@ struct Start: View {
             VStack{
                 Landing_Page()
                     .offset(y: 30)
-                    //.navigationTitle("RentFree")
+                //.navigationTitle("RentFree")
                 
                 NavigationLink(
                     destination: Create_Account(),
@@ -28,7 +28,6 @@ struct Start: View {
                                 Capsule()
                                     .fill(Color("AccentColor"))
                                     .frame(width:280, height:70)
-                              
                             )
                     })
                 .offset(y:-90)
