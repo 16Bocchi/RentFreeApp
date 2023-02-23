@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-
 struct Landing_Page: View {
     var body: some View {
         ZStack{
@@ -30,13 +29,15 @@ struct Landing_Page: View {
                 .font(.system(size:45))
                 .fontWeight(.heavy)
                 .foregroundColor(Color(hue: 1.0, saturation: 0.0, brightness: 0.123))
-                .position(x: 130, y: 90)
+                .position(x: 130, y: 40)
             
             
             Text("Travel better with us!")
                 .font(.system(size:25))
                 .foregroundColor(Color(hue: 1.0, saturation: 0.0, brightness: 0.123))
-                .position(x: 145, y: 140)
+                .position(x: 143, y: 80)
+            
+          
             
         }
     }
